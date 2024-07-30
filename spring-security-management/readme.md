@@ -16,3 +16,12 @@
   > org.springframework.security.web.session.SessionManagementFilter@5adb4a3a,
   > org.springframework.security.web.access.ExceptionTranslationFilter@42d6707e,
   > org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1070d1ba]
+
+- 1
+  > org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration 
+  >   org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
+  >     @EnableConfigurationProperties({SecurityProperties.class})
+  >     @Import({SpringBootWebSecurityConfiguration.class, WebSecurityEnablerConfiguration.class, SecurityDataConfiguration.class})
+  >     org.springframework.boot.autoconfigure.security.servlet.WebSecurityEnablerConfiguration
+  >       @EnableWebSecurity
+  >         org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration
